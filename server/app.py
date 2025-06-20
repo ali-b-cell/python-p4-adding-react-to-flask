@@ -68,6 +68,11 @@ def messages_by_id(id):
         )
 
     return response
+@app.route("/")
+def index():
+    return{"message": "Welcome to Chatterbox API"}, 200
+
+    return response
 
 if __name__ == "__main__":
     app.run(port=5555)
